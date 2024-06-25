@@ -1,0 +1,107 @@
+:root{
+    --color-white: #fff;
+    --color-roxo: #9174f8;
+    --color-roxo2: #a136e9;
+    --color-gray: #eeeeee;
+}
+
+body{
+    all: unset;
+    font-family: arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-roxo);
+    
+}
+
+.content{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem ;
+    padding: 3rem 4rem;
+    color: var(--color-white);
+}
+
+.content input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: .4rem;
+    border-bottom: 1px solid var(--color-white);
+    width: 50%;
+}
+
+.content input::placeholder{
+    color: var(--color-white);
+}
+
+.content input:focus{
+    border-bottom: 1px solid var(--color-white);
+}
+
+.content button{
+    padding: .8rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: var(--color-roxo2);
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-white);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.content button:hover{
+    background-color: var(--color-roxo);
+    
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(140, 17, 222); 
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+    margin-top: 800px;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(24, 17, 222);
+    transform: scale(1.05);
+    border:solid 3px #9000ff;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: rgb(24, 17, 222);
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.st{
+    margin-top: -300px;
+}
